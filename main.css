@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+	#circle
+	{
+		border-radius: 50% 50% 50% 50%;
+		width: 150px;
+		height: 150px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		
+		
+	}
+	#intro
+	{
+		font-weight: normal;
+		font-size: 300%;
+		color: #EFE9D9;
+		align-content: center;
+		text-align: center;
+	}
+	body
+	{
+		text-align:center;
+		background-color: #110918;
+		background-image: url(http://www.dsktps.com/wallpapers/2013/11/121_FLATzero_by_articted_2880x1800.jpg);
+		background-repeat:repeat-x;
+		margin:auto auto;
+		
+	}
+	#About
+	{
+		font-size: 200%;
+		padding: 0;
+		align-content: center;
+		margin: bottom;
+	}
+	#sections
+	{
+		
+		margin: auto;
+		padding: auto;
+		text-align: center;
+		background-color: #EEECE1;
+		color: #110918;
+	}
+	#projects
+	{
+		text-align:left;
+		margin-left: 30%;
+		margin-top: 10%;
+		font-size: 500%;
+	}
+	hr
+	{
+		border-bottom: 1px dashed black;
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+		width: 30%;
+	}
+	p
+	{
+		font-size: 175%;
+		color: #110918;
+		padding-bottom: 5%;
+	}
+	aside
+	{
+		float:left;
+	}
+
+

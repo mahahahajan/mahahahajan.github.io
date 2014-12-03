@@ -23,7 +23,7 @@
 	{
 		text-align:center;
 		background-color: #110918;
-		background-image: url(http://www.dsktps.com/wallpapers/2013/11/121_FLATzero_by_articted_2880x1800.jpg);
+		background-image: url(DSC_0333.JPG);
 		background-repeat:repeat-x;
 		margin:auto auto;
 		
@@ -41,7 +41,7 @@
 		margin: auto;
 		padding: auto;
 		text-align: center;
-		background-color: #EEECE1;
+		background-color: #FFFFFF;
 		color: #110918;
 	}
 	#projects
@@ -50,6 +50,13 @@
 		margin-left: 30%;
 		margin-top: 10%;
 		font-size: 500%;
+	}
+	#SideWaysLinks
+	{
+		display:inline;
+		font-size: 150%;
+		list-style-type:none;
+		padding-right: 10%;
 	}
 	hr
 	{

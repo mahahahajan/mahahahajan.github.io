@@ -24,7 +24,6 @@
 		text-align:center;
 		background-color: #110918;
 		background-image: url(DSC_0333.JPG);
-		background-repeat:repeat-x;
 		margin:auto auto;
 		
 	}
@@ -38,11 +37,12 @@
 	#sections
 	{
 		
-		margin: auto;
-		padding: auto;
+		margin: 5% 7.5%;
+		padding: 0;
 		text-align: center;
 		background-color: #FFFFFF;
 		color: #110918;
+		text-justify: 
 	}
 	#projects
 	{
@@ -53,10 +53,10 @@
 	}
 	#SideWaysLinks
 	{
-		display:inline;
+		display: inline;
 		font-size: 150%;
-		list-style-type:none;
-		padding-right: 10%;
+		list-style-type: none;
+		text-align: center;
 	}
 	hr
 	{
@@ -70,11 +70,15 @@
 	{
 		font-size: 175%;
 		color: #110918;
-		padding-bottom: 5%;
+		padding:0 5% 5% 5%;
+		text-align: justify;
 	}
 	aside
 	{
 		float: left;
 	}
-
-
+	#pages
+	{
+		text-align: center;
+		text-decoration:none;
+	}

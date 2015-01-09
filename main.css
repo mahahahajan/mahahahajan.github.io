@@ -58,6 +58,11 @@
 		color: #3B3831;
 		opacity: 0.95;
 	}
+	h1
+	{
+		font: 200%;
+		color: #000000;
+	}
 	#projects
 	{
 		text-align: center;
@@ -72,11 +77,12 @@
 		font-size: 150%;
 		list-style-type: none;
 		text-align: center;
+
 	}
 
 	#nav-section
 	{
-		display: inline;		
+		display: block;		
 		list-style-type: none;
 		padding: 0;
 		float: left;
@@ -118,9 +124,10 @@
 		float: left;
 		padding-left: 3%;
 	}
-	a
+	a, a:visited
 	{
-		color:#2286D8;
+		color: blue;
+		text-decoration: none;
 	}
 	#nav
 	{

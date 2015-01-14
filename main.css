@@ -29,7 +29,8 @@
 		background-color: #000000;
 		//background-image: url(DSC_0333.JPG);
 		margin:auto auto;
-		
+		font-family: Helvetica;
+		font-size: 12px;
 		
 	}
 	canvas
@@ -65,9 +66,8 @@
 	}
 	#projects
 	{
-		text-align: center;
-		margin-right: 30%;
-		margin-top: 10%;
+		//text-align: center;
+		
 		font-size: 200%;
 		color: #000000;
 	}
@@ -79,7 +79,21 @@
 		text-align: center;
 
 	}
-
+	table, tr, td
+	{
+		font-size: 125%;
+		border-style: none;
+		text-align: center;
+		padding: auto;
+		margin: auto;
+	}
+	#diffTable
+	{
+		
+		border-style: none;
+		font-size: 100%;
+		display: block;
+	}
 	#nav-section
 	{
 		display: block;		
@@ -106,11 +120,17 @@
 	}
 	hr
 	{
-		border-bottom: 1px dashed black;
-		border-top: 0;
+		border-bottom: 0;
+		border-top: 1px dashed black;
 		border-right: 0;
 		border-left: 0;
 		width: 30%;
+	}
+	#diffSections
+	{
+		border: 1px dotted black;
+		width: 45%;
+		margin-bottom: 5%;
 	}
 	p
 	{
@@ -119,11 +139,7 @@
 		padding:0 5% 5% 5%;
 		text-align: justify;
 	}
-	aside
-	{
-		float: left;
-		padding-left: 3%;
-	}
+	
 	a, a:visited
 	{
 		color: blue;

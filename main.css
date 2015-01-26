@@ -28,6 +28,9 @@
 		text-align:center;
 		background-color: #000000;
 		//background-image: url(DSC_0333.JPG);
+		background-position: top; 
+		background-repeat: no-repeat;
+    	background-attachment: relative;
 		margin:auto auto;
 		font-family: Helvetica;
 		font-size: 12px;
@@ -57,7 +60,7 @@
 		text-align: center;
 		background-color: white;
 		color: #3B3831;
-		opacity: 0.95;
+		opacity: 0.75;
 	}
 	h1
 	{
@@ -113,6 +116,7 @@
 		width: 100%;
 		height: 10vh;
 		opacity: 0.75;
+		background-attachment: fixed;
 		position: fixed;
     	top: 0vh;
     	left: 0;
@@ -139,7 +143,10 @@
 		padding:0 5% 5% 5%;
 		text-align: justify;
 	}
-	
+	img 
+	{
+		opacity: 1;
+	}
 	a, a:visited
 	{
 		color: blue;
@@ -175,4 +182,40 @@
 		cursor: default;
 		height: 320px;
 		width: 480px;
+	}
+	div.parallax
+	{
+		height: 100vh;
+
+		  /* fix background */
+		background-attachment: fixed;
+
+		  /* center it */
+		background-position: top center;
+
+		  /* Scale it nicely to the element */
+		background-size: cover;
+	}
+	#top
+	{
+		height: 1300;
+		width: 868;
+		background-image: url(DSC_0333.JPG);
+	}
+	#Me
+	{
+		background-image: url(CodeImage-1.png);
+	}
+	#skillzz
+	{	
+		background-image: url(DSC_0309.JPG);
+	}
+	#projectz
+	{
+		height: 125%;
+		background-image: url(CodeImage-2.png);
+	}
+	#Achievmentz
+	{
+		background-image: url(ATT-Hacks2.jpg);
 	}

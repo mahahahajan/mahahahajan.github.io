@@ -24,7 +24,7 @@
 		text-align: center;
 	}
 	body
-	{
+	{`
 		text-align:center;
 		background-color: #000000;
 		//background-image: url(DSC_0333.JPG);
@@ -33,7 +33,7 @@
     	background-attachment: relative;
 		margin:auto auto;
 		font-family: Helvetica;
-		font-size: 12px;
+		font-size: 1.75vh;
 		
 	}
 	canvas

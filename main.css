@@ -89,6 +89,7 @@
 		text-align: center;
 		padding: auto;
 		margin: auto;
+		font-size: normal;
 	}
 	#diffTable
 	{
@@ -181,7 +182,7 @@
 	}
 	div.parallax
 	{
-		height: 100vh;
+		height: 75vh;
 
 		  /* fix background */
 		background-attachment: fixed;
@@ -194,8 +195,7 @@
 	}
 	#top
 	{
-		height: 1300;
-		width: 868;
+		
 		background-image: url(FaceAward.jpg);
 	}
 	#Me

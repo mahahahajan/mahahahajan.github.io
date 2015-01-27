@@ -89,7 +89,7 @@
 		text-align: center;
 		padding: auto;
 		margin: auto;
-		font-size: 125%;
+		font-size: 110%;
 	}
 	#diffTable
 	{
@@ -106,7 +106,7 @@
 		position: relative;
 		font-weight: bold;
 		width: 10%;
-		font-size: 100%;
+		font-size: 2vh;
 		z-index: 999;
 		top: 0px;
 	}

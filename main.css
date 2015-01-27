@@ -105,7 +105,8 @@
 		float: left;
 		position: relative;
 		font-weight: bold;
-		width: 10%;
+		width: 25%;
+		text-align: center;
 		font-size: 2vh;
 		z-index: 999;
 		top: 0px;
@@ -142,7 +143,7 @@
 		font-size: 175%;
 		color: #000000;
 		padding:0 5% 5% 5%;
-		text-align: justify;
+		text-align: center;
 	}
 	a, a:visited
 	{
@@ -182,7 +183,7 @@
 	}
 	div.parallax
 	{
-		height: 75vh;
+		height: 100vh;
 
 		  /* fix background */
 		background-attachment: fixed;

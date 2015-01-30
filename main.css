@@ -26,7 +26,7 @@
 	body
 	{`
 		text-align:center;
-		background-color: #000000;
+		background-color: rgb(61, 57, 54);
 		//background-image: url(DSC_0333.JPG);
 		background-position: top; 
 		background-repeat: no-repeat;
@@ -55,7 +55,7 @@
 	#sections
 	{
 		
-		margin: 0% 7.5% 5% 7.5%;
+		margin: 0% 7.5% 2.5% 7.5%;
 		text-align: center;
 		background-color: white;
 		color: #3B3831;
@@ -183,14 +183,25 @@
 	}
 	div
 	{
-		
 		padding-top: 2.5%;
 		margin-bottom: 2.5%;
+	}
+	div.bottom
+	{
+		padding-top: 0px;
+		margin-bottom: 0px;
+	}
+	footer.pageBottom
+	{
+		background-color: rgb(61, 57, 54);
+		color: white;
+		font-size: 120%;
+		height: 2vh;
 	}
 	div.parallax
 	{
 		height: 100vh;
-
+		
 		  /* fix background */
 		background-attachment: fixed;
 

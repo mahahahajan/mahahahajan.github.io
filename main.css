@@ -184,24 +184,30 @@
 	div
 	{
 		padding-top: 2.5%;
-		margin-bottom: 2.5%;
+		
 	}
 	div.bottom
 	{
-		padding-top: 0px;
+		margin-top: 0%;
 		margin-bottom: 0px;
+		padding: 0;
+		width: 100%;
 	}
 	footer.pageBottom
 	{
+		padding: 0;
+		margin: 0 0 0 0;
 		background-color: rgb(61, 57, 54);
 		color: white;
-		font-size: 120%;
-		height: 2vh;
+		word-spacing: 150%;
+		line-height: 200%;
+		font-size: 130%;
+		height: 1vh;
 	}
 	div.parallax
 	{
 		height: 100vh;
-		
+
 		  /* fix background */
 		background-attachment: fixed;
 

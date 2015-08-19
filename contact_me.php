@@ -1,29 +1,32 @@
 <?php
-if(isset($_POST['daButton']))
-debug.log("Works");
-// Check for empty fields
-if(empty($_POST['first'])  		||
-   empty($_POST['last']) 		||
-   empty($_POST['email']) 		||
-   empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   {
-	echo "No arguments Provided!";
-	return false;
-   }
+$field_name = $_POST['first'];
+$field_email = $_POST['email'];
+$field_message = $_POST['message'];
 
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$mail_to = 'pulkit8.mahajan@gmail.com';
+$subject = 'Message from a site visitor '.$field_name;
 
-// Create the email and send the message
-$to = 'pulkit8.mahajan@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = $email_address\n; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";
-mail($to,$email_subject,$email_body,$headers);
-return true;
+$body_message = 'From: '.$field_name."\n";
+$body_message .= 'E-mail: '.$field_email."\n";
+$body_message .= 'Message: '.$field_message;
+
+$headers = 'From: '.$field_email."\r\n";
+$headers .= 'Reply-To: '.$field_email."\r\n";
+
+$mail_status = mail($mail_to, $subject, $body_message, $headers);
+
+if ($mail_status) { ?>
+	<script language="javascript" type="text/javascript">
+		alert('Thank you for the message. We will contact you shortly.');
+		window.location = 'contact_page.html';
+	</script>
+<?php
+}
+else { ?>
+	<script language="javascript" type="text/javascript">
+		alert('Message failed. Please, send an email to gordon@template-help.com');
+		window.location = 'contact_page.html';
+	</script>
+<?php
 }
 ?>

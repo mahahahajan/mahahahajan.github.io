@@ -1,243 +1,287 @@
 @charset "UTF-8";
+html,body
+{
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+body
+{
+  background-color: black;
+  color: white;
+  font-family: Roboto;
+  font-size: 125%;
+}
+nav
+{
+  -moz-transition: background-color 0.2s ease;
+-webkit-transition: background-color 0.2s ease;
+-ms-transition: background-color 0.2s ease;
+transition: background-color 0.2s ease;
+background: #2e3842;
+height: 2em;
+font-size: 95%;
+line-height: 1em;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 10000;
+padding-bottom: 5%;
+box-sizing: border-box;
+}
+#Intro
+{
+  font-family: 'Arial Rounded MT Bold';
+  background-color: #2196F3;
+  background-image: url(DSC_0309.JPG);
+  background-size: cover;
+  background-position: bottom;
+  color: brown;
+  text-align: center;
+  height: 99.85vh;
+  width: 98.86vw;
+  padding: 0;
+  border-width: 1vw;
+  display: block;
+}
+#Center
+{
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+  z-index: 100;
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+  position: absolute;
+}
 
-	#circle
-	{
-		border-radius: 50% 50% 50% 50%;
-		width: 150px;
-		height: 150px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+#Orange
+{
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  height: 96vh;
+  width: 96.95vw;
+  border : solid 1vw #E64A19;
+  background-color: #FF5722;
+}
+#aboutMe
+{
+  padding:0;
+  display: block;
+  margin: 0;
+  border: 0;
+}
+#Green
+{
+    background-color: #4CAF50;
+    height: 100%;
+    width: 96.95vw;
+    border : solid 1vw #388E3C;
+}
+#NavyBlue
+{
+    background-color: #34495e;
+    height: 100%;
+    width: 96.95vw;
+    border : solid 1vw #2c3e50;
+}
+#footerBlue
+{
+    background-color: #3498db;
+    height: 100%;
+    width: 96.95vw;
+    border : solid 1vw #2980b9;
+}
+#circle
+{
+  border-radius: 50% 50% 50% 50%;
+  width: 275px;
+  height: 275px;
+  display: inline;
+  align-content: left;
+  margin-top: 5%;
+  vertical-align: bottom;
+}
+#theRight
+{
+  align-content: center;
+  text-align: justify;
+  font-stretch: ultra-expanded;
+  display: inline-block;
+  padding-left: 25%;
+  padding-right: 2%;
+  width:45%;
+  padding-top: 0;
+  font-weight: bold;
+  margin-bottom: 5%;
+  font-size: 125%;
+  font-weight: lighter;
+}
+#superAnnoyingTable
+{
+  padding-top: 3%;
+  height: 50%;
+}
+#super
+{
+  align-items:  baseline;
+  align-content:  center;
+  align-self: baseline;
+  width: 101%;
+  height: 56%;
+  border-collapse: collapse;
+}
+#Annoying
+{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#social
+{
+  padding-left: 0;
+  border: 0;
+  align-content: center;
+  text-align: center;
+  width: 16%;
+  padding-bottom: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+#social:hover
+{
+  margin: 0;
+  padding: 0;
+  width: 17%;
+  background: #E64A19;
+}
+.ThePhoto
+{
 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+table
+{
+  height: 80%;
+  width: 100%;
+  border-spacing: 20px;
+  padding: 0;
+}
+.cardBackground
+{
+  width: 30%;
+  color: black;
+  background-color: #cacfd3;
+  border-radius: 30px;
+  word-wrap: break-word;
+  padding: 0;
+}
+form
+{
+  box-shadow: none;
+  border: 0;
+}
 
-	}
-	#header
-	{
-		margin: 5% auto 40%;
-	}
-	#intro
-	{
-		font-weight: normal;
-		font-size: 300%;
-		color: #FFFFFF;
-		align-content: center;
-		text-align: center;
-	}
-	body
-	{
-		text-align:center;
-		background-color: black;
-		//background-image: url(DSC_0333.JPG);
-		background-position: top;
-		background-repeat: no-repeat;
-    	background-attachment: relative;
-		margin:auto auto;
-		font-family: Helvetica;
-		font-size: 1.75vh;
+.container {
+  width: 88%;
+  margin: 2em auto;
+  overflow: hidden;
+  background: white;
+  border-radius: 5px;
+}
 
-	}
-	canvas
-	{
-		display: block;
-		position: fixed;
-		top:0;
-		left:0;
-		z-index: -5;
-	}
-	#About
-	{
-		font-size: 200%;
-		padding: 0;
-		align-content: center;
-		margin: bottom;
-		color: #000000;
-	}
-	#sections
-	{
+.message, .contact, .name, .footer, header, footer, textarea {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  clear: both;
+  overflow: hidden;
+}
 
-		margin: 0% 7.5% 2.5% 7.5%;
-		text-align: center;
-		background-color: white;
-		color: black;
-		opacity: 1;
-	}
-	h1
-	{
-		font: 200%;
-		color: #000000;
-	}
-	#projects
-	{
-		//text-align: center;
+header, #contact {
+  background: #e74c3c;
+  line-height: 200%;
+  padding-left: 40%;
+  border-radius: 5px 5px 0 0;
+  border: #e74c3c;
+  height: 12.5%;
+}
+header h1, #contact h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: white;
+}
 
-		font-size: 200%;
-		color: #000000;
-	}
-	#SideWaysLinks
-	{
-		display: inline;
-		font-size: 150%;
-		list-style-type: none;
-		text-align: center;
+.first, .last {
+  float: left;
+  width: 47.06%;
+  margin: 0;
+  padding: 0 0 0 20px;
+  border: 1px solid #e74c3c;
+  height: 50px;
+}
 
-	}
-	table, tr, td
-	{
+.last {
+  width: 49%;
+  border-left: 0;
+}
 
-		border-style: none;
-		text-align: center;
-		padding: auto;
-		margin: auto;
+.email, textarea {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  padding: 0 0 0 20px;
+  border-top: 0;
+  border-left: 1px solid #e74c3c;
+  border-right: 1px solid #e74c3c;
+  border-bottom: 1px solid #e74c3c;
+}
 
-	}
-	#diffTable
-	{
+textarea {
+  height: 200px;
+}
 
-		border-style: none;
-		font-size: 100%;
-		display: block;
-	}
-	#nav-section
-	{
-		display: block;
-		list-style-type: none;
-		float: left;
-		position: relative;
-		font-weight: bold;
-		width: 25%;
-		text-align: center;
-		font-size: 2vh;
-		z-index: 999;
-		top: 0px;
-	}
-	nav
-	{
-		display: block;
-		background-color: white;
-		width: 100%;
-		height: 10vh;
-		opacity: 0.75;
-		background-attachment: fixed;
-		position: fixed;
-    	top: 0vh;
-    	left: 0;
-    	z-index: 999;
-	}
-	hr
-	{
-		border-bottom: 0;
-		border-top: 1px dashed black;
-		border-right: 0;
-		border-left: 0;
-		width: 30%;
-	}
-	#diffSections
-	{
-		border: 1px dotted black;
-		width: 45%;
-		margin-bottom: 5%;
-
-	}
-	p
-	{
-		font-size: 175%;
-		color: #000000;
-		padding:0 5% 5% 5%;
-		text-align: center;
-	}
-	a, a:visited
-	{
-		color: blue;
-		text-decoration: none;
-	}
-	#nav
-	{
-		display: block;
-		background-color: black;
-		color: white;
-		text-decoration: none;
-		height: 10vh;
-		line-height: 4;
-		text-align: center;
-		padding: 0 0.5em 0 0.5em;
-	}
-	#nav:hover
-	{
-		background-color: rgb(37, 37, 49);
-
-	}
-	#pages, #pages:visited
-	{
-		text-align: center;
-		text-decoration:none;
-		color: #000000;
-	}
-	#pages:hover
-	{
-		color: #c4c7ce;
-	}
-	div#unityPlayer
-	{
-		cursor: default;
-		height: 320px;
-		width: 480px;
-	}
-	div
-	{
-		padding-top: 2.5%;
-
-	}
-	div.bottom
-	{
-		margin-top: 0%;
-		margin-bottom: 0px;
-		padding: 0;
-		width: 100%;
-		color: white;
-	}
-	footer.pageBottom
-	{
-		padding: 0;
-		margin: 0 0 0 0;
-		background-color: rgb(61, 57, 54);
-		color: white;
-		word-spacing: 150%;
-		line-height: 200%;
-		font-size: 130%;
-		height: 1vh;
-	}
-	div.parallax
-	{
-		height: 100vh;
-
-		  /* fix background */
-		background-attachment: fixed;
-
-		  /* center it */
-		background-position: center;
-
-		  /* Scale it nicely to the element */
-		background-size: cover;
-	}
-	#top
-	{
-
-		background-image: url(FaceAward.jpg);
-	}
-	#Me
-	{
-		background-image: url(CodeImage-1.jpg);
-	}
-	#skillzz
-	{
-		background-image: url(DSC_0309.JPG);
-	}
-	#projectz
-	{
-		height: 125%;
-		background-image: url(CodeImage-2.jpg);
-	}
-	#Achievmentz
-	{
-		background-image: url(ATT-Hacks2.jpg);
-	}
+#contact {
+  height: 49px;
+  border-top: 1px dashed orange;
+  border-radius: 0 0 5px 5px;
+  padding-left: 0;
+  padding-right: 20px;
+}
+#contact button {
+  height: 32px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  border: 0;
+  margin: 7px 0;
+  color: #e74c3c;
+  float: right;
+  padding: 0 20px 0 20px;
+  border-bottom: 3px solid #bdc3c7;
+  transition: all linear .2s;
+}
+#contact button:hover {
+  background: #bdc3c7;
+}
+#contact button:focus {
+  outline: none;
+}
+.first:focus, .last:focus, .email:focus, textarea:focus, textarea:focus {
+  outline: none;
+}
+#bottom
+{
+  font-size: 0.8em;
+  letter-spacing: 0.225em;
+  line-height: 1em;
+  z-index: 0;
+}

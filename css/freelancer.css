@@ -8,7 +8,9 @@ body {
 }
 li
 {
-  list-style-type: none;
+  list-style-type: circle;
+  font-size: 120%;
+  align-self: center;
 }
 @font-face {
   font-family: 'HarryP';

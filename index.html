@@ -50,7 +50,7 @@
                         <a href="#about" id="blue">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact" id="white">Contact</a>
+                      <!--  <a href="#contact" id="white">Contact</a> -->
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
         <div class="container">
             <div class="row" >
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/me.jpeg" style= "height:30%; width:30%; border-radius:50%;" alt="">
+                    <img class="img-responsive" src="https://scontent.xx.fbcdn.net/v/t1.0-9/13507058_1753183214961686_7219329462453341749_n.jpg?oh=fb3e36c5defa28d5a088ddf887e44a64&oe=57C58D2F" style= "height:30%; width:30%; border-radius:50%;" alt="">
                     <div class="intro-text">
                         <span class="name">Pulkit Mahajan</span>
                         <hr class="star-light">
@@ -86,37 +86,41 @@
             </div>
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-2">
-                    <p> I am a 15 year old coder who loves computers. I started programming at the age of 8 and I haven't
+                    <p> I am a <span id="age"> </span>  year old coder who loves computers. I started programming at the age of 8 and I haven't
                         stopped since. I have won:
 
                     </p>
                     <ul>
                       <li>
-                        Best App at CodeDay Bay Area 2014,
+                        Best App at CodeDay Bay Area 2014
                       </li>
                       <li>
-                        Best Overall App and Best use of Web RTC at the AT&T Hackathon Public Safety Hackathon,
+                        Best Overall App at the AT&T Hackathon Public Safety Hackathon
+                      </li>
+                      <li>
+                        Best use of Web RTC at the AT&T Hackathon Public Safety Hackathon
                       </li>
                       <li>
                         Most Useful App at PubNub's 2015 Hackathon
                       </li>
                       <li>
-                        Most Entreprenurial at CodeDay Bay Area 2015,
+                        Most Entreprenurial at CodeDay Bay Area 2015
                       </li>
                       <li>
-                        Honorable Mention at AT&T's Virtual Reality Hackathon,
+                        Honorable Mention at AT&T's Virtual Reality Hackathon
                       </li>
                       <li>
-                        Honorable Mention at Mastercard's Masters of Code,
+                        Honorable Mention at Mastercard's Masters of Code
                       </li>
                       <li>
-                        Honorable Mention at CodeDay SV 2015 (Fall).
+                        Honorable Mention at CodeDay SV 2015
                       </li>
                     </ul>
                 </div>
                 <!--<div class="col-lg-5">
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>-->
+                <br>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="https://github.com/mahahahajan" class="btn btn-lg btn-outline">
                         <i class="fa fa-github"></i>
@@ -262,9 +266,9 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>42 Diagon Alley<br>Nebuchadnezzar, Alderaan Galaxy </p>
+                  <div class="footer-col col-md-4">
+                          <!--<h3>Location</h3>
+                        <p>42 Diagon Alley<br>Nebuchadnezzar, Alderaan Galaxy </p> -->
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
@@ -281,13 +285,16 @@
                             <li>
                                 <a href="https://www.linkedin.com/profile/view?id=AAMAABdGoyEBVI3dLXEsX4gy8104C-pGZhuJy0Y&trk=hp-identity-name" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
+                            <li>
+                              <a href="https://www.instagram.com/mahahahajan/" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
 
                         </ul>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3> Other</h3>
+                   <div class="footer-col col-md-4">
+                        <!-- <h3> Other</h3>
                         <p> Stuff
-                        </p>
+                        </p>  -->
                     </div>
                 </div>
             </div>
@@ -539,6 +546,8 @@
     <script src="particles.js-master/particles.js"></script>
     <script src="particles.js-master/demo/js/app.js"></script>
 
+    <!--Age thing -->
+    <script src="js/ageCalc.js"></script>
 </body>
 
 </html>

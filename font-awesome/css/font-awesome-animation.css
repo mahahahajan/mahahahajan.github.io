@@ -791,21 +791,21 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    color: #c0392b;
+    color: #e74c3c;
   }
 
   50% {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
-    color: #e74c3c;
+    color: #c0392b;
   }
 
   100% {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    color: #c0392b;
+    color: #e74c3c;
   }
 }
 

@@ -8,9 +8,14 @@ body {
 }
 li
 {
-  list-style-type: circle;
+
   font-size: 120%;
   align-self: center;
+}
+
+#trophyUl{
+  list-style-image: url("../trophy.png");
+  list-style-type: none;
 }
 @font-face {
   font-family: 'HarryP';
@@ -75,6 +80,42 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+hr.teacher-primary{
+  margin: 25px auto 30px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+}
+hr.teacher-primary:after{
+  content:"\f19d";
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: FontAwesome;
+  font-size: 2em;
+  background-color: #de3f3f;
+}
+hr.skillz-thing{
+  margin: 25px auto 30px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+}
+hr.skillz-thing:after{
+  content:"\f121";
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: FontAwesome;
+  font-size: 2em;
+  background-color: #34495e;
+}
 hr.star-white,
 hr.star-light,
 hr.star-primary {
@@ -107,11 +148,11 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: white;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
+    color: white;
     background-color: #e67e22;
 }
 hr.star-white {
@@ -305,7 +346,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: white;
 }
 
 @media(max-width:767px) {
@@ -325,8 +366,20 @@ section.success a.active {
 #portfolio{
   background: #e67e22;
   border : solid 1vw #d35400;
+  color: white;
 }
 
+#teacher{
+  background: #de3f3f ;
+  border: solid 1vw  #c63b3b;
+  color: white;
+
+}
+#skillz{
+  background-color: #34495e;
+  border: solid 1vw #2c3e50;
+  color: white;
+}
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;

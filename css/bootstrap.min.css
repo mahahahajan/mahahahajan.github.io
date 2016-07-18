@@ -5761,8 +5761,8 @@ table-bordered>thead>tr>th, .table-bordered>thead>tr>th, table-bordered>tbody>tr
   box-shadow: none
 }
 .progress .progress-bar {
-  font-size: 4vh;
-  line-height: 7vh;
+  font-size: 4vmin;
+  line-height: 7vmin;
 }
 .well {
   -webkit-box-shadow: none;

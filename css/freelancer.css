@@ -55,6 +55,9 @@ a.active {
     outline: 0;
     color: #18bc9c;
 }
+#git:hover{
+  color: #3498db;
+}
 #orange:hover,
 #orange:focus,
 #orange:active {

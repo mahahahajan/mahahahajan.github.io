@@ -65,6 +65,16 @@ a.active {
 #blue:active {
   color: #3498db;
 }
+#grey:hover,
+#grey:focus,
+#grey:active {
+  color: #7f8c8d;
+}
+#red:hover,
+#red:focus,
+#red:active {
+  color: #e74c3c;
+}
 #white:hover,
 #white:focus,
 #white:active {
@@ -322,7 +332,7 @@ header .intro-text .skills {
 
 .navbar-default,
 .navbar-inverse {
-  border: solid 1vw #607D8B;
+  border: solid 1vw #bdc3c7;
 }
 
 section {

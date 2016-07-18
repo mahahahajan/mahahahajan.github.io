@@ -3761,11 +3761,11 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
   }
 }
 .navbar-default {
-  background-color: #34495e;
-  border: solid 1vw #2c3e50;
+  background-color: #ecf0f1;
+  border: solid 1vw #bdc3c7;
 }
 .navbar-default .navbar-brand {
-  color: #ffffff
+  color: #34495e
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #2ecc71;
@@ -3775,7 +3775,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
   color: #777777
 }
 .navbar-default .navbar-nav>li>a {
-  color: #ffffff
+  color: #34495e;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: #18bc9c;

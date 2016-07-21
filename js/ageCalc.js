@@ -7,7 +7,7 @@ Site = (function(){
     var duration = now - dob;
     var years = duration / 31556900000;
 
-    var majorMinor = years.toFixed(3).toString().split('.');
+    var majorMinor = years.toString().split('.');
     $age.text(majorMinor[0] + "." + majorMinor[1]);
   }, 100);
 

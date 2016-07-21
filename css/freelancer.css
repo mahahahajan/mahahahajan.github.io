@@ -250,7 +250,7 @@ header {
     text-align: center;
     color: #fff;
     background: #2ecc71;
-    border : solid 1vw #27ae60;
+  /*  border : solid 1vw #27ae60; */
 }
 
 header .container {
@@ -335,7 +335,7 @@ header .intro-text .skills {
 
 .navbar-default,
 .navbar-inverse {
-  border: solid 1vw #bdc3c7;
+ /*  border: solid 1vw #bdc3c7; */
 }
 
 section {
@@ -350,7 +350,7 @@ section h2 {
 section.success {
     color: #fff;
     background: #3498db;
-    border : solid 1vw #2e8ece;
+  /*  border : solid 1vw #2e8ece; */
 }
 
 section.success a,
@@ -378,19 +378,19 @@ section.success a.active {
 }
 #portfolio{
   background: #e67e22;
-  border : solid 1vw #d35400;
+  /* border : solid 1vw #d35400; */
   color: white;
 }
 
 #teacher{
   background: #de3f3f ;
-  border: solid 1vw  #c63b3b;
+/*  border: solid 1vw  #c63b3b; */
   color: white;
 
 }
 #skillz{
   background-color: #34495e;
-  border: solid 1vw #2c3e50;
+/*  border: solid 1vw #2c3e50; */
   color: white;
 }
 #portfolio .portfolio-item {
@@ -535,7 +535,7 @@ footer h3 {
 footer .footer-above {
     padding-top: 50px;
     background-color: #1abc9c;
-    border: solid 1vw #16a085;
+  /*  border: solid 1vw #16a085; */
 }
 
 footer .footer-col {
@@ -545,7 +545,7 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #f1c40f;
-    border: solid 1vw #f39c12;
+ /*    border: solid 1vw #f39c12; */
 }
 
 .btn-social {

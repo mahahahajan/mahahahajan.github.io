@@ -12,6 +12,10 @@ li
   font-size: 120%;
   align-self: center;
 }
+.progress .progress-bar{
+      font-size: 33px;
+    line-height: 290%;
+}
 
 #trophyUl{
   list-style-image: url("../trophy.png");
@@ -157,7 +161,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #2ecc71;
+    background-color: #2CCB89;
 }
 
 hr.star-primary {
@@ -202,6 +206,16 @@ hr.about-primary {
 hr.about-primary:after {
     color: #2c3e50;
     background-color: #ecf0f1;
+}
+
+hr.about-primary,
+hr.about-light {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
 }
 
 hr.question-light,

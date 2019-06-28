@@ -1,0 +1,154 @@
+html,
+body,
+.container {
+    z-index: 1;
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    background-color: black;
+    color: black;
+
+}
+
+canvas {
+    z-index: -999;
+    position: fixed;
+    opacity: .8;
+    display: flex;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    height: 1vh;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+}
+
+.knockout {
+    color: white;
+
+}
+
+.halfHeight {
+    height: 50%;
+}
+
+.leftAlign {
+    text-align: right;
+
+}
+
+.leftText {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    transition: none;
+    padding: 2% 2% 2% 4%;
+
+    font-size: .9rem;
+}
+
+.rightAlign {
+    text-align: left;
+}
+
+.rightText {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    transition: none;
+    padding: 2% 4% 2% 2%;
+
+    font-size: .9rem;
+}
+
+.groupBtn {
+    color: white;
+    margin: 0;
+    font-size: 50%;
+}
+
+.myBtn {
+    padding: 0;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+.space {
+    margin-top: 1.5vh;
+
+    padding: 1vh 0 1vh 0;
+}
+
+.change {
+    color: #333f48;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.UT {
+    color: #bf5700;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.hookEm {
+    color: #020202;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.social {
+    margin-left: -5%;
+}
+
+.card-img-top {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.project-title {
+    border-bottom-color: #6c757d;
+    border-bottom-style: solid;
+    border-bottom-width: .1vh
+}
+
+.customVertical {
+    margin-top: 5%;
+}
+
+.textMedium {
+    font-size: 1.2rem;
+}
+.bg-movie{
+    background-color: #2ecc71!important;
+}
+.bg-apps{
+    background-color: #8e44ad!important;
+}
+.bg-startup{
+    background-color: #e74c3c!important;
+}
+.textSkills{
+    font-size: 1.4rem;
+    color: #6c757d!important;
+}
+.textBig{
+    font-size: 1.4rem;
+}

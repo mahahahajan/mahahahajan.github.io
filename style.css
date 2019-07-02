@@ -18,6 +18,9 @@ canvas {
     position: fixed;
     opacity: .8;
     display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #333f48;
 }
 
 
@@ -120,7 +123,7 @@ p {
 }
 
 .card-img-top {
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
 .project-title {
@@ -131,24 +134,33 @@ p {
 
 .customVertical {
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .textMedium {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    display: block;
+
 }
-.bg-movie{
-    background-color: #2ecc71!important;
+
+.bg-movie {
+    background-color: #2ecc71 !important;
 }
-.bg-apps{
-    background-color: #8e44ad!important;
+
+.bg-apps {
+    background-color: #8e44ad !important;
 }
-.bg-startup{
-    background-color: #e74c3c!important;
+
+.bg-startup {
+    background-color: #e74c3c !important;
 }
-.textSkills{
+
+.textSkills {
     font-size: 1.4rem;
-    color: #6c757d!important;
+    color: #6c757d !important;
 }
-.textBig{
+
+.textBig {
     font-size: 1.4rem;
 }

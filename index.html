@@ -13,8 +13,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link
-        href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Rubik|Ubuntu|Source+Sans+Pro&display=swap"
         rel="stylesheet">
       <link rel="stylesheet" href="style.css">
 
@@ -22,177 +21,304 @@
     </head>
 
     <body>
-      <header>
-        <nav id="navbar">
-          <div class="navbar">
-            <div class="logo ">
-              <h1> PULKIT MAHAJAN </h1>
-            </div>
-            <div class="nav-link one">
-              <a href="#about"> ABOUT </a>
-            </div>
-            <div class="nav-link two">
-              <a href="#projects"> PROJECTS </a>
-            </div>
-            <div class="nav-link three">
-              <a href="#contacts"> CONTACT </a>
-            </div>
-
+      <!-- Canvas used for javascript to render Matrix background-->
+      <canvas id="c"></canvas>
+      <div class="container-fluid">
+        <!--customVertical class used to move down card frmo very top-->
+        <div class="card mx-auto w-75 customVertical">
+          <div class="card-header">
+            <i class="fas fa-book-open"></i>
+            README.md
           </div>
+          <!---<img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body ">
+            <h1 class="card-title ">Pulkit Mahajan</h1>
 
-        </nav>
-      </header>
+            <hr>
 
 
+            <!-- Social Media Links-->
+            <div class="container-fluid">
+              <div class="row">
 
-      <main>
-        <div class="page">
-          <section id="welcome">
-            <h1 id="welcome-text"> Welcome 😁</h1>
-          </section>
-          <section id="my-picture">
-            <figure class="image-holder">
-              <img src="whoami.jpg">
-            </figure>
-          </section>
-          <div class="content">
-            <p class="me-caption"> [Error 404: Witty Intro caption not found] </p>
-            <div class="post-content">
-              <section id="about">
-                <h1> About me </h1>
-                <ol type="1">
-                  <li> 👨🏽‍🎓I'm a sophomore at the University of Texas Austin (🤘🏽). I'm currently studying
-                    Electrical and Computer Engineering, and love messing around with
-                    anything from computers and other technology ⌚️</li>
-                  <li> 📸When I'm not coding, I'm binging Netflix (you can follow my progress here), playing video
-                    games, or hanging out with friends</li>
-                </ol>
-              </section>
-              <section id="projects">
-                <h1> Projects </h1>
-                <ol type="1" class="project-tile">
-                  <li> 🖥 <a target="_blank" id="project-link" href="">
-                      <!-- http://pulkitmportfolio.weebly.com/bio.html I -->
-                      started learning how to code when I was 13</a>, which has turned into a lifetime of tinkering
-                    with technology. </li> <!-- Link calc or website -->
-                  <li> 🕹I make <a target="_blank" id="project-link" href="">iPhone</a> and <a target="_blank"
-                      id="project-link" href=""> Android</a> apps with Unity. I started building them for class,
-                    hackathons, or
-                    just for fun - you can check some of them out here</li>
-                  <li> 🔋I'm currently working learning how to be a full stack developer by completing <a
-                      target="_blank" id="project-link" href="https://www.freecodecamp.org/mahahahajan">
-                      freeCodeCamp</a> and
-                    the <a target="_blank" id="project-link" href=""> Odin Project</a>. </li>
-                  <li> 📒I'm also taking classes such as <a target="_blank" id="project-link" href=""> Algorithms</a>,
-                    <a target="_blank" id="project-link" href=""> Software Design</a>, and <a target="_blank"
-                      id="project-link" href=""> Signals and Systems</a>. You can
-                    see some exmples of my projects and coursework <a target="_blank" id="project-link" href="">
-                      here</a>. </li>
-                </ol>
-                <!-- Seed -->
-                <!-- <article class="project-tile">
-                  <div class="project-holder">
-                    <img class="project-thumbnail" src="img/seed.png">
-                    <div class="article-summary">
-                      <div class="top-align">
-                        <h3> Seed </h3>
-                        <p>Starred in documentary about startups in Silicon Valley. A film
-                          crew followed us and 2 other teams in AngelHack's Hackcelerator as we attemped to prep our
-                          startups to VCs and secure some seed funding.</p>
-                      </div>
-                      <div class="bottom-align">
-                        <div class="navbar">
-                          <a href="#" class="proj-link"> Watch</a>
-                          <a href="#" class="proj-link"> Trailer</a>
-                          <a href="#" class="proj-link"> IMDb</a>
+                <div id="buildPassing" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+
+                  <a href="#">
+                    <div class="groupBtn">
+                      <div class="row">
+
+                        <div class="col-6 col-md-6 leftAlign myBtn">
+                          <h6 class="btn btn-dark leftText noHover ">build </h5>
                         </div>
+                        <div class="col-6 col-md-6 rightAlign myBtn">
+                          <h6 class="btn btn-success rightText noHover ">passing</h5>
+                        </div>
+
                       </div>
                     </div>
+                  </a>
+                </div>
 
-                  </div>
-                </article>
-                <!-- Nomad 
-                <article class="project-tile">
-                  <div class="project-holder">
-                    <img class="project-thumbnail" src="img/logo.png">
-                    <div class="article-summary">
-                      <div class="top-align">
-                        <h3> Nomad </h3>
-                        <p>Attemped to build a B2B startup. Trained neural networks to recognize and classify various
-                          clothing articles. Simply scan an item of clothing and instantly be transported to a link
-                          where you could buy it from one of our retail partners.</p>
-                      </div>
-                      <div class="bottom-align">
-                        <div class="navbar">
-                          <a href="#" class="proj-link"> Watch</a>
-                          <a href="#" class="proj-link"> Trailer</a>
-                          <a href="#" class="proj-link"> IMDb</a>
+
+                <div id="github" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+
+                  <a href="https://github.com/mahahahajan/">
+                    <div class="groupBtn">
+                      <div class="row">
+
+                        <div class="col-6 col-md-6 leftAlign myBtn">
+                          <h6 class="btn btn-dark leftText noHover ">git</h5>
                         </div>
+                        <div class="col-6 col-md-6 rightAlign myBtn">
+                          <h6 class="btn btn-success rightText noHover ">hub</h5>
+                        </div>
+
                       </div>
                     </div>
+                  </a>
+                </div>
 
-                  </div>
-                </article>
-                <!-- Apps?
-                <article class="project-tile">
-                  <div class="project-holder">
-                    <img class="project-thumbnail" src="img/downside.png">
-                    <div class="article-summary">
-                      <div class="top-align">
-                        <h3> App Development </h3>
-                        <p>Built iOS and Android app in order to "test reflexes". Used Unity3D to develop the app and
-                          published to both Google Play Store and App Store.</p>
-                      </div>
-                      <div class="bottom-align">
-                        <div class="navbar">
-                          <a href="#" class="proj-link"> Watch</a>
-                          <a href="#" class="proj-link"> Trailer</a>
-                          <a href="#" class="proj-link"> IMDb</a>
+                <div id="facebook" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+
+                  <a href="https://www.facebook.com/mahahahajan">
+                    <div class="groupBtn">
+                      <div class="row">
+
+                        <div class="col-6 col-md-6 leftAlign myBtn">
+                          <h6 class="btn btn-dark leftText noHover ">face</h5>
                         </div>
+                        <div class="col-6 col-md-6 rightAlign myBtn">
+                          <h6 class="btn btn-success rightText noHover ">book</h5>
+                        </div>
+
                       </div>
                     </div>
+                  </a>
+                </div>
 
-                  </div>
-                </article> -->
-              </section>
-              <section id="contacts">
-                <h1> Get in touch</h1>
+                <div id="instagram" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
 
-                <ol type="1" class="project-tile">
-                  <li> 📧 Email - Feel free to reach out to me on email for any work oppurtunities. </li>
-                  <!-- Link calc or website -->
-                  <li> 📲 You can also reach out to me through my instagram - @mahahahajan </li>
-                  <li> 💙 Thanks for visiting! I’m stoked that you made it this far. </li>
-                  <li> 😂 As a reward for making it this far here's a joke: Why are mountains so funny? Because they're
-                    hill areas.</li>
-                </ol>
+                  <a href="https://instagram.com/mahahahajan">
+                    <div class="groupBtn">
+                      <div class="row">
+
+                        <div class="col-6 col-md-6 leftAlign myBtn">
+                          <h6 class="btn btn-dark leftText noHover ">insta</h5>
+                        </div>
+                        <div class="col-6 col-md-6 rightAlign myBtn">
+                          <h6 class="btn btn-success rightText noHover ">gram</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div id="twitter" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+
+                  <a href="https://twitter.com/mahahahajan">
+                    <div class="groupBtn">
+                      <div class="row">
+
+                        <div class="col-6 col-md-6 leftAlign myBtn">
+                          <h6 class="btn btn-dark leftText noHover ">twit</h5>
+                        </div>
+                        <div class="col-6 col-md-6 rightAlign myBtn">
+                          <h6 class="btn btn-success rightText noHover ">ter</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div id="linkedin" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+
+                  <a href="https://www.linkedin.com/in/mahahahajan/">
+                    <div class="groupBtn">
+                      <div class="row">
+
+                        <div class="col-6 col-md-6 leftAlign myBtn">
+                          <h6 class="btn btn-dark leftText noHover ">linked</h5>
+                        </div>
+                        <div class="col-6 col-md-6 rightAlign myBtn">
+                          <h6 class="btn btn-success rightText noHover ">in</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+
+              </div>
             </div>
+
+            <!-- End Social Media Links-->
+
+            <div class="space"></div>
+            <!-- Short about me area -->
+            <p class="card-text textBig">Hey there! I'm Pulkit Mahajan, a <span class="change"> sophmore </span> at the
+              <span class="UT"> University of Texas at Austin </span>🤘.
+              I'm studying computer engineering, and love messing around with computers and other technology. When I'm
+              not coding, I'm binge watching Netflix or hanging out with friends. </p>
+
+            <!--End About Me-->
+            <div class="space"></div>
+            <!-- Projects section -->
+            <h2 class="card-title"> Projects </h2>
+            <hr>
+
+            <div class="container-fluid">
+              <div class="row">
+
+                <!-- Set up card deck -->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+                  <div class="card shadow h-100">
+                    <h5 class="card-header bg-movie text-white">
+                      Movie
+                    </h5>
+                    <img src="img/seed.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title project-title"> Seed</h4>
+
+                      <p class="card-text text-justify"> Starred in documentary about startups in Silicon Valley. A film
+                        crew followed us and 2 other teams in AngelHack's Hackcelerator as we attemped to prep our
+                        startups to VCs and secure some seed funding.
+
+                      </p>
+                    </div>
+                    <div class="card-footer ">
+                      <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                          <a href="https://www.amazon.com/Seed-Sabeen-Ali/dp/B07S51VJ16/" class="card-link textMedium">
+                            <i class="fas fa-film"></i> Watch</a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4    ">
+                          <a href="https://www.youtube.com/watch?v=4qyuHfRHLkc" class="card-link  textMedium"> <i
+                              class="fab fa-youtube"> </i> Trailer </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                          <a href="https://www.imdb.com/title/tt6594148/" class="card-link textMedium"> <i
+                              class="fab fa-imdb"></i>
+                            IMDB </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Project 1: Seed-->
+
+                <!--Project 2: Nomad-->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+                  <div class="card shadow h-100 ">
+                    <h5 class="card-header bg-startup text-white">
+                      Startup
+                    </h5>
+                    <img src="img/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title project-title"> Nomad (2016-2018) </h4>
+                      <p class="card-text text-justify"> Attemped to build a B2B startup. Trained neural networks to
+                        recognize and classify various clothing articles. Simply scan an item of clothing and instantly
+                        be transported to a link where you could buy it from one of our retail partners.
+
+                      </p>
+                    </div>
+                    <div class="card-footer ">
+                      <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                          <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
+                          </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                          <a class="card-link textMedium" href="https://mahahahajan.github.io/NomadLandingPage/"> <i
+                              class="fas fa-globe"></i> Website </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                          <a class="card-link textMedium"
+                            href="https://drive.google.com/file/d/1eahJngBJ0ebM8_2-xOz0CLfl3_l855I3/view?usp=sharing">
+                            <i class="fab fa-youtube"></i> Demo </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Project 3: ReAcsion-->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+                  <div class="card shadow  h-100">
+                    <h5 class="card-header bg-apps text-white">
+                      App
+                    </h5>
+                    <img src="img/reacsion.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title project-title"> ReAcsion </h4>
+                      <p class="card-text text-justify"> Built iOS and Android app in order to "test reflexes". Used
+                        Unity3D to
+                        develop the app and published to both Google Play Store and App Store. </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                          <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
+                          </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4   ">
+                          <a class="card-link text-muted textMedium"> <i class="fab fa-google-play"></i> Android </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                          <a class="card-link text-muted textMedium"><i class="fab fa-app-store"></i> iOS App </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--id="sideSpace" used for divs that only exist to create horizontal space between cards-->
+            </div>
+            <div class="space"> </div>
+            <!-- Skills - It's a little too bare right now so I'm gonna comment it out for right now
+            <h2 class="card-title"> Skills </h2>
+            <hr>
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-4 mx-auto textSkills">
+                      <ul>
+                          <li> HTML / CSS / JS</li>
+                          <li> Java </li>
+                          <li> Python </li>
+                          
+                          
+                        </ul>
+                  </div>
+
+                <div class="col-md-4 mx-auto textSkills">
+                    <ul class="">
+                        <li> Front-End (UI/UX)</li>
+                          <li> Bash </li>
+                          <li> Git </li>
+      
+                      </ul>
+                </div>
+              </div>
+            </div> -->
+            <h2 class="card-title"> Work with me </h2>
+            <hr>
+            <p class="card-text textBig"> Feel free to reach out and <a href="mailto:pulkit8.mahajan@gmail.com"> contact</a> me, for work oppurtunities
+              or even just to chat! </p>
+
+            <a href="mailto:pulkit8.mahajan@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="resume.pdf" class="btn btn-primary"><i class="fas fa-file"></i> Resume </a>
           </div>
-          </section>
 
         </div>
+      </div>
 
 
-        <!-- <div>
-          <div >
-            
-            
-            
-          </div>
-        </div> -->
-        <footer id="footer">
-          <!--Copyright Pulkit Mahajan-->
-          <h4 id="copyright"> Made by Pulkit Mahajan</h4>
-          <div class="right-align">
-            <a class="social" href=""><i class="fa fa-github"></i></a>
-            <a class="social" href=""><i class="fa fa-facebook"></i> </a>
-            <a class="social" href=""><i class="fa fa-twitter"> </i> </a>
-            <a class="social" href=""> <i class="fa fa-linkedin"> </i> </a>
-            <a class="social" href="" target="_blank" id="profile-link"><i class="fa fa-freeCodeCamp"></i></a>
-          </div>
 
-        </footer>
-      </main>
+
+
+
 
 
       <!-- Optional JavaScript -->

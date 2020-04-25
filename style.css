@@ -1,292 +1,165 @@
-:root {
-    --background: #FFFFFF;
-    --text: black;
-    font-size: 18px;
-}
+html,
+body,
+.container {
+    z-index: 1;
+    height: 100%;
 
-
-@media(prefers-color-scheme:dark) {
-    :root {
-        --background: #191B1F;
-        --text: white;
-    }
 }
 
 body {
-    background-color: var(--background);
-    font-family: "Roboto", monospace;
-    line-height: 1.4;
-    font-weight: 300;
-    color: var(--text);
     display: flex;
-    flex-direction: column;
-}
-
-header {
-    max-height: 80px;
-    position: fixed;
-    width: 100%;
-
-}
-
-nav {
     background-color: black;
-    padding-top: .82vh;
+    color: black;
+
 }
 
-.navbar {
+canvas {
+    z-index: -999;
+    position: fixed;
+    opacity: .8;
     display: flex;
-    flex-direction: row;
-    margin-right: 1.5vw;
-    max-height: 80px;
-    flex-wrap: nowrap;
-    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #333f48;
 }
 
-.logo {
-    flex: 50%;
-    margin-left: 5vw;
-    padding: 10px;
-    font-family: Ubuntu Condensed;
-
-}
-
-.logo>h1 {
-    font-size: xx-large;
-
-}
-
-.two {
-    text-align: center;
-
-}
-
-.nav-link {
-    text-align: center;
-    flex: auto 0 80px;
-    align-self: center;
-    font-size: 1.6rem;
-    padding: 10px 20px 10px 20px;
-    justify-content: center;
-}
-
-.nav-link:hover {
-    font-size: 1.6rem;
-    align-self: center !important;
-    background-color: var(--text);
-    color: var(--background);
-    text-decoration: none;
-
-}
-
-a {
-    text-decoration: none;
-    color: var(--text);
-}
 
 a:hover {
     text-decoration: none;
-    color: var(--background);
 }
 
-.nav-link:hover>a {
-    color: var(--background);
-}
-
-/* a{
-    text-decoration: none;
-    color: var(--text);
-}
-a:hover{
-    color: var(--background);
-    text-decoration: none;
-} */
-main {
-    width: 100%;
-    display: block;
-    background-color: var(--background);
-    margin-top: 100px;
-
-    min-height: 100vh;
-    /* border: 10px solid green; */
-}
-
-.page {
-    background-color: var(--background);
-    max-width: 1040px;
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-    color: var(--text);
-    /* border: 1px solid blue; */
-    margin: 0 auto;
-}
-
-.content {
-    margin-left: 200px;
-    margin-right: 200px;
-    min-width: 620px;
-    /* border: 1px solid red; */
-}
-
-section {
-    margin-bottom: 45px;
-}
-
-#welcome {
-    padding: 70px 170px 50px;
-    text-align: left;
-}
-
-#welcome-text {
-    font-size: 3.8rem;
-
-}
-
-h1 {
-    font-weight: 100 !important;
-}
-
-.image-holder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin: 25px 0 50px;
-
-    border-radius: 3px;
-}
-
-img {
-    max-width: 1040px;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    border: 1px solid var(--text);
+hr {
+    height: 1vh;
 }
 
 p {
-    min-width: 100%;
-    font-size: larger;
-    font-family: inherit;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
-h1 {
+.container {
+    display: flex;
+}
+
+.knockout {
+    color: white;
+
+}
+
+.halfHeight {
+    height: 50%;
+}
+
+.leftAlign {
+    text-align: right;
+
+}
+
+.leftText {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    transition: none;
+    padding: 2% 2% 2% 4%;
+
+    font-size: .9rem;
+}
+
+.rightAlign {
+    text-align: left;
+}
+
+.rightText {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    transition: none;
+    padding: 2% 4% 2% 2%;
+
+    font-size: .9rem;
+}
+
+.groupBtn {
+    color: white;
+    margin: 0;
+    font-size: 50%;
+}
+
+.myBtn {
+    padding: 0;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+.space {
+    margin-top: 1.5vh;
+
+    padding: 1vh 0 1vh 0;
+}
+
+.change {
+    color: #333f48;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
-.post-content {
-    margin-top: 4vh;
+.UT {
+    color: #bf5700;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
-ol {
-    padding-left: 2rem;
+.hookEm {
+    color: #020202;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 
-li {
-    line-height: 1.6em;
-    padding: 5px;
-    font-size: 1.5rem;
-    font-family: Roboto, monospace;
-    text-align: justify;
+.social {
+    margin-left: -5%;
 }
 
-.article-summary {
-    text-align: justify;
+.card-img-top {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
-.project-holder {
-    margin-top: 55px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
+.project-title {
+    border-bottom-color: #6c757d;
+    border-bottom-style: solid;
+    border-bottom-width: .1vh
 }
 
-.project-thumbnail {
-    max-width: 200px;
-    width: auto;
-    height: auto;
-    border: none;
-    margin-right: 25px;
+.customVertical {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.top-align {
-    vertical-align: top;
-}
-
-.bottom-align {
-    vertical-align: bottom;
-}
-
-#project-link:hover {
-    color: var(--text);
-}
-
-#project-link {
-    text-decoration: underline;
-}
-
-.proj-link {
-    text-align: center;
-    flex: auto 0 40px;
-    align-self: center;
-    font-size: 1.6rem;
-    justify-content: center;
-}
-
-#copyright {
-    font-size: 18px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: black;
-    width: 100%;
-    min-height: 50px;
-    max-height: 80px;
-    padding: auto;
-    margin: auto;
-    align-items: center;
+.textMedium {
+    font-size: 1.1em;
+    word-wrap: break-word;
+    display: block;
 
 }
-
-.social:hover {
-    color: var(--text);
+.bg-movie {
+    background-color: #2ecc71 !important;
 }
 
-/* Portrait */
-@media screen and (orientation:portrait) {
-
-    /* Portrait styles */
-
-
-    @media (max-width: 900px) {
-        :root {
-            font-size: 12px;
-        }
-
-        .content {
-            margin-left: 1vw;
-            margin-right: 1vw;
-        }
-        #welcome{
-            padding-left: 1vw;
-        }
-        
-    }
+.bg-apps {
+    background-color: #8e44ad !important;
 }
 
-.overlay {
-    display: hidden;
+.bg-startup {
+    background-color: #e74c3c !important;
 }
 
+.textSkills {
+    font-size: 1.4rem;
+    color: #6c757d !important;
+}
 
-@media (max-width: 640px) {
-    
-    .content{
-        min-width: 100px!important;
-    }
+.textBig {
+    font-size: 1.4rem;
 }

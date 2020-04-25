@@ -16,13 +16,13 @@
       <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Rubik|Ubuntu|Source+Sans+Pro&display=swap"
         rel="stylesheet">
       <link rel="stylesheet" href="style.css">
-
+      <link rel="icon" href="favicon.png" type="image" sizes="16x16">
       <title>Pulkit Mahajan</title>
     </head>
 
     <body>
       <!-- Canvas used for javascript to render Matrix background-->
-      <canvas id="c"></canvas>
+      <canvas id=""></canvas>
       <div class="container-fluid">
         <!--customVertical class used to move down card frmo very top-->
         <div class="card mx-auto w-75 customVertical">
@@ -32,126 +32,43 @@
           </div>
           <!---<img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body ">
-            <h1 class="card-title ">Pulkit Mahajan</h1>
+            <h1 class="card-title "> Pulkit Mahajan</h1>
 
             <hr>
 
 
             <!-- Social Media Links-->
             <div class="container-fluid">
-              <div class="row">
-
-                <div id="buildPassing" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-
-                  <a href="#">
-                    <div class="groupBtn">
-                      <div class="row">
-
-                        <div class="col-6 col-md-6 leftAlign myBtn">
-                          <h6 class="btn btn-dark leftText noHover ">build </h5>
-                        </div>
-                        <div class="col-6 col-md-6 rightAlign myBtn">
-                          <h6 class="btn btn-success rightText noHover ">passing</h5>
-                        </div>
-
-                      </div>
-                    </div>
-                  </a>
+              <div class="row justify-content-start">
+                <div class="social2" id="buildPassing">
+                  <span class="badge black left">build </span>
+                  <span class="badge green right"> passing</span>
                 </div>
-
-
-                <div id="github" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-
-                  <a href="https://github.com/mahahahajan/">
-                    <div class="groupBtn">
-                      <div class="row">
-
-                        <div class="col-6 col-md-6 leftAlign myBtn">
-                          <h6 class="btn btn-dark leftText noHover ">git</h5>
-                        </div>
-                        <div class="col-6 col-md-6 rightAlign myBtn">
-                          <h6 class="btn btn-success rightText noHover ">hub</h5>
-                        </div>
-
-                      </div>
-                    </div>
-                  </a>
+                <div class="spacer"></div>
+                <div class="social2" id="github">
+                  <span class="badge black left"> git</span>
+                  <span class="badge green right">hub </span>
                 </div>
-
-                <div id="facebook" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-
-                  <a href="https://www.facebook.com/mahahahajan">
-                    <div class="groupBtn">
-                      <div class="row">
-
-                        <div class="col-6 col-md-6 leftAlign myBtn">
-                          <h6 class="btn btn-dark leftText noHover ">face</h5>
-                        </div>
-                        <div class="col-6 col-md-6 rightAlign myBtn">
-                          <h6 class="btn btn-success rightText noHover ">book</h5>
-                        </div>
-
-                      </div>
-                    </div>
-                  </a>
+                <div class="spacer"></div>
+                <div class="social2" id="instgram">
+                  <span class="badge black left"> insta</span>
+                  <span class="badge green right">gram </span>
                 </div>
-
-                <div id="instagram" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-
-                  <a href="https://instagram.com/mahahahajan">
-                    <div class="groupBtn">
-                      <div class="row">
-
-                        <div class="col-6 col-md-6 leftAlign myBtn">
-                          <h6 class="btn btn-dark leftText noHover ">insta</h5>
-                        </div>
-                        <div class="col-6 col-md-6 rightAlign myBtn">
-                          <h6 class="btn btn-success rightText noHover ">gram</h5>
-                        </div>
-
-                      </div>
-                    </div>
-                  </a>
+                <div class="spacer"></div>
+                <div class="social2" id="linkedin">
+                  <span class="badge black left"> linked</span>
+                  <span class="badge green right">in </span>
                 </div>
-
-                <div id="twitter" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-
-                  <a href="https://twitter.com/mahahahajan">
-                    <div class="groupBtn">
-                      <div class="row">
-
-                        <div class="col-6 col-md-6 leftAlign myBtn">
-                          <h6 class="btn btn-dark leftText noHover ">twit</h5>
-                        </div>
-                        <div class="col-6 col-md-6 rightAlign myBtn">
-                          <h6 class="btn btn-success rightText noHover ">ter</h5>
-                        </div>
-
-                      </div>
-                    </div>
-                  </a>
+                <div class="spacer"></div>
+                <div class="social2" id="facebook">
+                  <span class="badge black left"> face</span>
+                  <span class="badge green right">book </span>
                 </div>
-
-                <div id="linkedin" class="social col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
-
-                  <a href="https://www.linkedin.com/in/mahahahajan/">
-                    <div class="groupBtn">
-                      <div class="row">
-
-                        <div class="col-6 col-md-6 leftAlign myBtn">
-                          <h6 class="btn btn-dark leftText noHover ">linked</h5>
-                        </div>
-                        <div class="col-6 col-md-6 rightAlign myBtn">
-                          <h6 class="btn btn-success rightText noHover ">in</h5>
-                        </div>
-
-                      </div>
-                    </div>
-                  </a>
+                <div class="spacer"></div>
+                <div class="social2" id="twitter">
+                  <span class="badge black left"> twit</span>
+                  <span class="badge green right">ter </span>
                 </div>
-
-
-
               </div>
             </div>
 
@@ -159,10 +76,9 @@
 
             <div class="space"></div>
             <!-- Short about me area -->
-            <p class="card-text textBig">Hey there! I'm Pulkit Mahajan, a <span class="change"> sophmore </span> at the
-              <span class="UT"> University of Texas at Austin </span>🤘.
-              I'm studying computer engineering, and love messing around with computers and other technology. When I'm
-              not coding, I'm binge watching Netflix or hanging out with friends. </p>
+            <p class="card-text textBig">I'm a sophomore at the University of Texas Austin 🤘🏽. I'm currently studying
+              Electrical and Computer Engineering, and love messing around with hardware and software. When I'm not coding, I'm binging Netflix (you can follow my progress here), playing video
+              games, or hanging out with friends.  </p>
 
             <!--End About Me-->
             <div class="space"></div>
@@ -175,9 +91,11 @@
 
                 <!-- Set up card deck -->
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+
+                  <!--Project 1: Seed-->
                   <div class="card shadow h-100">
-                    <h5 class="card-header bg-movie text-white">
-                      Movie
+                    <h5 class="card-header bg-green text-white">
+                      🎥 Movie
                     </h5>
                     <img src="img/seed.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -208,13 +126,42 @@
                     </div>
                   </div>
                 </div>
-                <!--Project 1: Seed-->
+                
+                <!--Project 2: ReAcsion-->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+                  <div class="card shadow  h-100">
+                    <h5 class="card-header bg-red text-white">
+                      📲 App
+                    </h5>
+                    <img src="img/reacsion.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title project-title"> ReAcsion </h4>
+                      <p class="card-text text-justify"> Built iOS and Android app in order to "test reflexes". Used
+                        Unity3D to
+                        develop the app and published to both Google Play Store and App Store. </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                          <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
+                          </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4   ">
+                          <a class="card-link text-muted textMedium"> <i class="fab fa-google-play"></i> Android </a>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                          <a class="card-link text-muted textMedium"><i class="fab fa-app-store"></i> iOS App </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                <!--Project 2: Nomad-->
+                <!--Project 3: Websites-->
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
                   <div class="card shadow h-100 ">
-                    <h5 class="card-header bg-startup text-white">
-                      Startup
+                    <h5 class="card-header bg-blue text-white">
+                      🖥 Web
                     </h5>
                     <img src="img/logo.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -244,35 +191,7 @@
                     </div>
                   </div>
                 </div>
-                <!--Project 3: ReAcsion-->
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
-                  <div class="card shadow  h-100">
-                    <h5 class="card-header bg-apps text-white">
-                      App
-                    </h5>
-                    <img src="img/reacsion.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title project-title"> ReAcsion </h4>
-                      <p class="card-text text-justify"> Built iOS and Android app in order to "test reflexes". Used
-                        Unity3D to
-                        develop the app and published to both Google Play Store and App Store. </p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
-                          <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
-                          </a>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4   ">
-                          <a class="card-link text-muted textMedium"> <i class="fab fa-google-play"></i> Android </a>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-                          <a class="card-link text-muted textMedium"><i class="fab fa-app-store"></i> iOS App </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
               <!--id="sideSpace" used for divs that only exist to create horizontal space between cards-->
             </div>
@@ -304,10 +223,12 @@
             </div> -->
             <h2 class="card-title"> Work with me </h2>
             <hr>
-            <p class="card-text textBig"> Feel free to reach out and <a href="mailto:pulkit8.mahajan@gmail.com"> contact</a> me, for work oppurtunities
+            <p class="card-text textBig"> Feel free to reach out and <a href="mailto:pulkit8.mahajan@gmail.com">
+                contact</a> me, for work oppurtunities
               or even just to chat! </p>
 
-            <a href="mailto:pulkit8.mahajan@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="mailto:pulkit8.mahajan@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email
+              Me</a>
             <a href="resume.pdf" class="btn btn-primary"><i class="fas fa-file"></i> Resume </a>
           </div>
 

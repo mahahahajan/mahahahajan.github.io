@@ -51,8 +51,41 @@ p {
 
 .leftAlign {
     text-align: right;
-
 }
+
+.badge{
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: .9rem;
+    font-weight:300;
+}
+.left{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    transition: none;
+    padding-right: .15rem;
+    padding-left: .4rem;
+}
+.right{
+    
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    padding-left: .15rem;
+    padding-right: .4rem;
+}
+.spacer{
+    width: .5vw;
+}
+.social2{
+    color:white;
+    display: flex;
+    margin-bottom: 10px;
+}
+
 
 .leftText {
     border-top-right-radius: 0;
@@ -143,16 +176,19 @@ p {
     display: block;
 
 }
-.bg-movie {
+.bg-green {
     background-color: #2ecc71 !important;
 }
 
-.bg-apps {
-    background-color: #8e44ad !important;
+.bg-orange {
+    background-color: #FF9800 !important;
 }
 
-.bg-startup {
+.bg-red {
     background-color: #e74c3c !important;
+}
+.bg-blue{
+    background-color: #4382AE !important;
 }
 
 .textSkills {
@@ -162,4 +198,10 @@ p {
 
 .textBig {
     font-size: 1.4rem;
+}
+.black{
+    background-color: #343A40;
+}
+.green{
+    background-color: #26A643;
 }

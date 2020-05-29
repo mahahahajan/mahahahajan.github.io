@@ -206,3 +206,12 @@ p {
 .green{
     background-color: #26A643;
 }
+.noStyle{
+    color: white;
+    display: inline-flex;
+
+}
+.noStyle:hover{
+    color: white !important;
+    text-decoration: none;
+}

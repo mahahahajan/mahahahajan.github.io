@@ -25,7 +25,7 @@
       <canvas id="c"></canvas>
       <div class="container-fluid">
         <!--customVertical class used to move down card frmo very top-->
-        <div class="card mx-auto w-75 customVertical">
+        <div class="card mx-auto w-85 customVertical">
           <div class="card-header">
             <i class="fas fa-book-open"></i>
             README.md
@@ -71,7 +71,6 @@
                 <div class="spacer"></div>
                 <div class="social2" id="facebook">
                   <a href="https://www.facebook.com/mahahahajan" class="noStyle">
-
                     <span class="badge black left"> face</span>
                     <span class="badge green right">book </span>
                   </a>
@@ -84,6 +83,20 @@
                     <span class="badge green right">ter </span>
                   </a>
                 </div>
+                <div class="spacer"></div>
+                <div class="social2" id="matrix">
+                  <a href="#" onclick="turnOnCanvas()" class="noStyle">
+                    <span class="badge black left"> matrix</span>
+                    <span class="badge green right">mode </span>
+                  </a>
+                </div>
+                <div class="spacer"></div>
+                <div class="social2" id="reset">
+                  <a href="#" onclick="turnOffCanvas()" class="noStyle">
+                    <span class="badge black left"> reset</span>
+                    <span class="badge green right">theme </span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -91,129 +104,259 @@
 
             <div class="space"></div>
             <!-- Short about me area -->
-            <p class="card-text textBig">I'm a junior at the University of Texas Austin 🤘🏽. I'm currently studying
+            <p class="card-text textBig">I'm a senior at the University of Texas Austin 🤘🏽. I'm currently studying
               Electrical and Computer Engineering, and love messing around with hardware and software. When I'm not
-              coding, I'm binging Netflix (you can follow my progress <a href=https://www.notion.so/mahahahajan/ee8d0fd81c2e4bec893773baac2f59e6?v=1a3df7a87cb84536b4fb323ba4afa3d4> here</a>), playing video
-              games, or hanging out with friends. </p>
+              coding, I'm binging Netflix (you can follow my progress <a
+                href=https://www.notion.so/mahahahajan/ee8d0fd81c2e4bec893773baac2f59e6?v=1a3df7a87cb84536b4fb323ba4afa3d4>
+                here</a>), playing video games, or hanging out with friends. </p> <!--End About Me-->
+                <div class="space"></div>
+                <!-- Projects section -->
+                <h2 class="card-title"> Projects </h2>
+                <hr>
 
-            <!--End About Me-->
-            <div class="space"></div>
-            <!-- Projects section -->
-            <h2 class="card-title"> Projects </h2>
-            <hr>
+                <div class="container-fluid">
+                  <!-- Set up card deck -->
+                  <div class="card-deck">
 
-            <div class="container-fluid">
-              <div class="row">
+                    <!--Project: Simplicity-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
 
-                <!-- Set up card deck -->
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
-
-                  <!--Project 1: Seed-->
-                  <div class="card shadow h-100">
-                    <h5 class="card-header bg-green text-white">
-                      🎥 Movie
-                    </h5>
-                    <img src="img/seed.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title project-title"> Seed</h4>
-
-                      <p class="card-text text-justify"> Starred in documentary about startups in Silicon Valley. A film
-                        crew followed us and 2 other teams in AngelHack's Hackcelerator as we attemped to prep our
-                        startups to VCs and secure some seed funding.
-
-                      </p>
-                    </div>
-                    <div class="card-footer ">
-                      <div class="row">
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
-                          <a href="https://www.amazon.com/Seed-Sabeen-Ali/dp/B07S51VJ16/" class="card-link textMedium">
-                            <i class="fas fa-film"></i> Watch</a>
+                      <div class="card shadow h-100">
+                        <h5 class="card-header bg-blue text-white">
+                          🖥 Web
+                        </h5>
+                        <div class="myCardImg">
+                          <img src="img/simplicityImg.png" class="card-img-top " alt="...">
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4    ">
-                          <a href="https://www.youtube.com/watch?v=4qyuHfRHLkc" class="card-link  textMedium"> <i
-                              class="fab fa-youtube"> </i> Trailer </a>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-                          <a href="https://www.imdb.com/title/tt6594148/" class="card-link textMedium"> <i
-                              class="fab fa-imdb"></i>
-                            IMDB </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        
+                        <div class="card-body">
+                          <h4 class="card-title project-title"> Simplicity </h4>
 
-                <!--Project 2: ReAcsion-->
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
-                  <div class="card shadow h-100">
-                    <h5 class="card-header bg-red text-white">
-                      📲 App
-                    </h5>
-                    <img src="img/reacsionLogo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title project-title"> V2 (formerly ReAcsion) </h4>
-                      <p class="card-text text-justify"> Reacsion: Built iOS and Android app in order to "test reflexes". Used
-                        Unity3D to
-                        develop the app and published to both Google Play Store and App Store. 
-                      <br> V2: Rebuilt Reacsion from scratch in a week. Published to Google Play and App Store. </p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
-                          <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
-                          </a>
+                          <p class="card-text text-justify"> Simplicity is a Haas (Hardware-as-a-service) website where
+                            users can use the site's resources to work on collaborative projects with others, or even on
+                            personal projects. <br>
+                            Built as class project for UT Austin's EE 461L (Software Lab)
+                          </p>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4   ">
-                          <a  href="https://play.google.com/store/apps/details?id=com.ThePulk.V2" class="card-link textMedium"> <i class="fab fa-google-play"></i> Android </a>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-                          <a href="https://apps.apple.com/us/app/reacsion-v2/id1514239956" class="card-link  textMedium"><i class="fab fa-app-store"></i> iOS App </a>
+                        <div class="card-footer ">
+                          <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link textMedium" href="#"> <i class="fas fa-globe"></i> Website </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                              <a href="#" class="card-link textMedium"> <i class="fab fa-github"> </i> Github
+                              </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link text-muted textMedium" onclick="deadLink()" href="#">
+                                <i class="fab  fa-youtube"></i> Demo </a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                <!--Project 3: Websites-->
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
-                  <div class="card shadow h-100 ">
-                    <h5 class="card-header bg-blue text-white">
-                      🖥 Web
-                    </h5>
-                    <img src="img/logo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title project-title"> Nomad (2016-2018) </h4>
-                      <p class="card-text text-justify"> Attemped to build a B2B startup. Trained neural networks to
-                        recognize and classify various clothing articles. Simply scan an item of clothing and instantly
-                        be transported to a link where you could buy it from one of our retail partners.
+                    <!--Project: Cosmic Call-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
 
-                      </p>
-                    </div>
-                    <div class="card-footer ">
-                      <div class="row">
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-                          <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
-                          </a>
+                      <div class="card shadow h-100">
+                        <h5 class="card-header bg-red text-white">
+                          🎮 Game
+                        </h5>
+                        <div class="myCardImg">
+                          <img src="img/cosmicCallLogo.png" class="card-img-top " alt="...">
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
-                          <a class="card-link textMedium" href="https://mahahahajan.github.io/NomadLandingPage/"> <i
-                              class="fas fa-globe"></i> Website </a>
+                        
+                        <div class="card-body">
+                          <h4 class="card-title project-title"> Cosmic Call </h4>
+
+                          <p class="card-text text-justify"> Robots have begun their coup against the aliens in this
+                            futuristic PvP game. Play as a Robot trying to escape the ship and gain their freedom or as
+                            an Alien who is trying to suppress the rebellion. <br>
+                            Built as class project for UT Austin's AET 334K (Videogame Prototyping)
+                          </p>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
-                          <a class="card-link textMedium"
-                            href="https://drive.google.com/file/d/1eahJngBJ0ebM8_2-xOz0CLfl3_l855I3/view?usp=sharing">
-                            <i class="fab fa-youtube"></i> Demo </a>
+                        <div class="card-footer">
+                          <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link textMedium" href="#"> <i class="fas fa-globe"></i> Itch </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                              <a href="#" class="card-link textMedium"> <i class="fab fa-github"> </i> Github
+                              </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link textMedium" href="#">
+                                <i class="fab fa-youtube"></i> Demo </a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-              </div>
-              <!--id="sideSpace" used for divs that only exist to create horizontal space between cards-->
-            </div>
-            <div class="space"> </div>
-            <!-- Skills - It's a little too bare right now so I'm gonna comment it out for right now
+                    <!--Project: Cosmic Call-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+
+                      <div class="card shadow h-100">
+                        <h5 class="card-header bg-blue text-white">
+                          🖥 Web
+                        </h5>
+                        <div class="myCardImg">
+                          <img src="img/fakeNews.png" class="card-img-top " alt="...">
+                        </div>
+                        
+                        <div class="card-body">
+                          <h4 class="card-title project-title"> Fake News Detector </h4>
+
+                          <p class="card-text text-justify"> Machine Learning Web App to determine if news articles are real or fake <br>
+                            Built as class project for UT Austin's EE 460L (Datascience Lab)
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link textMedium" href="#"> <i class="fas fa-globe"></i> Website </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                              <a href="#" class="card-link textMedium"> <i class="fab fa-github"> </i> Github
+                              </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link text-muted textMedium" href="#">
+                                <i class="fab  fa-youtube"></i> Demo </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+
+                      <!--Project 1: Seed-->
+                      <div class="card shadow h-100">
+                        <h5 class="card-header bg-green text-white">
+                          🎥 Movie
+                        </h5>
+                        <div class="myCardImg">
+                          <img src="img/seed.png" class="card-img-top" alt="...">
+                        </div>
+                        
+                        <div class="card-body">
+                          <h4 class="card-title project-title"> Seed</h4>
+
+                          <p class="card-text text-justify"> Starred in documentary about startups in Silicon Valley. A
+                            film
+                            crew followed us and 2 other teams in AngelHack's Hackcelerator as we attemped to prep our
+                            startups to VCs and secure some seed funding.
+                          </p>
+                        </div>
+                        <div class="card-footer ">
+                          <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a href="https://www.amazon.com/Seed-Sabeen-Ali/dp/B07S51VJ16/"
+                                class="card-link textMedium">
+                                <i class="fas fa-film"></i> Watch</a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4    ">
+                              <a href="https://www.youtube.com/watch?v=4qyuHfRHLkc" class="card-link  textMedium"> <i
+                                  class="fab fa-youtube"> </i> Trailer </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                              <a href="https://www.imdb.com/title/tt6594148/" class="card-link textMedium"> <i
+                                  class="fab fa-imdb"></i>
+                                IMDB </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- <div class="card bg-dark text-white shadow h-100">
+                  <img src="img/seed.png" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">🎥 Movie</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                  </div>
+                </div> -->
+
+                    <!--Project 2: ReAcsion-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+                      <div class="card shadow h-100">
+                        <h5 class="card-header bg-red text-white">
+                          📲 App
+                        </h5>
+                        <img src="img/reacsionLogo.png" class="card-img-top myCardImg" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title project-title"> V2 (formerly ReAcsion) </h4>
+                          <p class="card-text text-justify"> Reacsion: Built iOS and Android app in order to "test
+                            reflexes". Used
+                            Unity3D to
+                            develop the app and published to both Google Play Store and App Store.
+                            <br> V2: Rebuilt Reacsion from scratch in a week. Published to Google Play and App Store.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
+                              </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4   ">
+                              <a href="https://play.google.com/store/apps/details?id=com.ThePulk.V2"
+                                class="card-link textMedium"> <i class="fab fa-google-play"></i> Android </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                              <a href="https://apps.apple.com/us/app/reacsion-v2/id1514239956"
+                                class="card-link  textMedium"><i class="fab fa-app-store"></i> iOS App </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Project 3: Websites-->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 py-2">
+                      <div class="card shadow h-100 ">
+                        <h5 class="card-header bg-blue text-white">
+                          🖥 Web
+                        </h5>
+                        <img src="img/logo.png" class="card-img-top myCardImg" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title project-title"> Nomad (2016-2018) </h4>
+                          <p class="card-text text-justify"> Attemped to build a B2B startup. Trained neural networks to
+                            recognize and classify various clothing articles. Simply scan an item of clothing and
+                            instantly
+                            be transported to a link where you could buy it from one of our retail partners.
+
+                          </p>
+                        </div>
+                        <div class="card-footer ">
+                          <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                              <a href="#" class="card-link text-muted textMedium"> <i class="fab fa-github"> </i> Github
+                              </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link textMedium" href="https://mahahahajan.github.io/NomadLandingPage/"> <i
+                                  class="fas fa-globe"></i> Website </a>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  ">
+                              <a class="card-link textMedium"
+                                href="https://drive.google.com/file/d/1eahJngBJ0ebM8_2-xOz0CLfl3_l855I3/view?usp=sharing">
+                                <i class="fab fa-youtube"></i> Demo </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--id="sideSpace" used for divs that only exist to create horizontal space between cards-->
+                </div>
+                <div class="space"> </div>
+                <!-- Skills - It's a little too bare right now so I'm gonna comment it out for right now
             <h2 class="card-title"> Skills </h2>
             <hr>
             <div class="container-fluid">
@@ -238,18 +381,21 @@
                 </div>
               </div>
             </div> -->
-            <h2 class="card-title"> Work with me </h2>
-            <hr>
-            <p class="card-text textBig"> Feel free to reach out and <a href="mailto:pulkit8.mahajan@gmail.com">
-                contact</a> me, for work oppurtunities
-              or even just to chat! </p>
+                <h2 class="card-title"> Work with me </h2>
+                <hr>
+                <p class="card-text textBig"> Feel free to reach out and <a href="mailto:pulkit8.mahajan@gmail.com">
+                    contact</a> me, for work oppurtunities
+                  or even just to chat! </p>
 
-            <a href="mailto:pulkit8.mahajan@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email
-              Me</a>
-            <a href="resume.pdf" class="btn btn-primary"><i class="fas fa-file"></i> Resume </a>
+                <a href="mailto:pulkit8.mahajan@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email
+                  Me</a>
+                <a href="resume.pdf" class="btn btn-primary"><i class="fas fa-file"></i> Resume </a>
           </div>
 
         </div>
+      </div>
+      <div class="bottomSpacer">
+
       </div>
 
 

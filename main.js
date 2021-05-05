@@ -7,6 +7,7 @@ c.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
 var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+// var matrix = "HELLO+WORLD_WELCOME-TO+MY_SITE"
 //converting the string into an array of single characters
 matrix = matrix.split("");
 
@@ -27,6 +28,9 @@ resetButton.style.display = "none";
 var matrixButton = document.getElementById("matrix");
 matrixButton.style.display = "flex";
 
+var codeBgButton = document.getElementById("codeBg");
+codeBgButton.style.display = "flex";
+
 //drawing the characters
 function draw() {
     //Black BG for the canvas
@@ -34,7 +38,7 @@ function draw() {
     ctx.fillStyle = "rgba(0, 0, 0, .04)";
     ctx.fillRect(0, 0, c.width, c.height);
 
-    ctx.fillStyle = "#00FF00";//green text
+    ctx.fillStyle = "#00c853";//green text
     ctx.font = font_size + "px arial";
     //looping over drops
     for (var i = 0; i < drops.length; i++) {
@@ -53,7 +57,7 @@ function draw() {
     }
 }
 
-setInterval(draw, 35);
+var interval =  setInterval(draw, 10);
 
 
 function deadLink() {
@@ -65,7 +69,10 @@ function turnOnCanvas() {
     c.style.height = "100%";
     var body = document.body;
     body.style.backgroundColor = "black";
-    draw();
+    // draw();
+    clearInterval(interval);
+    interval =  setInterval(draw, 100);
+    body.style.backgroundImage = "none";
     resetButton.style.display = "flex";
     matrixButton.style.display = "none";
 }
@@ -74,9 +81,25 @@ function turnOffCanvas() {
     c.style.width = "0";
     c.style.height = "0";
     var body = document.body;
-    body.style.backgroundColor = "white";
+    body.style.backgroundColor = "#eee";
     resetButton.style.display = "none";
     matrixButton.style.display = "flex";
+    codeBgButton.style.display = "flex";
+    body.style.backgroundImage = "none";
+    clearInterval(interval);
+    interval = setInterval(draw, 10);
     
     // draw();
+}
+
+function setBgCode(){
+    c.style.width = "0";
+    c.style.height = "0";
+    var body = document.body;
+    body.style.backgroundImage = "url(img/CodeImage-1.png)";
+    clearInterval(interval);
+    interval = setInterval(draw, 10);
+    resetButton.style.display = "flex";
+    // matrixButton.style.display = "none";
+    codeBgButton.style.display = "none";
 }

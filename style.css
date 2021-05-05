@@ -7,11 +7,14 @@ body,
 }
 
 body {
-    background-color:white;
+    background-color: #eee;
     color: black;
     height: 100%;
     width: 100%;
     margin-bottom: 5%;
+    overflow-x: hidden;
+    /* background-image: url("img/CodeImage-1.png"); */
+    /* background-size: cover; */
 }
 
 canvas {
@@ -25,6 +28,9 @@ canvas {
     top: 0;
 }
 
+p{
+    font-size: 12px;
+}
 
 a:hover {
     text-decoration: none;
@@ -173,7 +179,7 @@ p {
 
 .myCardImg {
     max-width: 370px;
-    max-height:200px;
+    max-height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -237,7 +243,7 @@ p {
 .noStyle {
     color: white;
     display: inline-flex;
-    
+
 
 }
 
@@ -246,18 +252,48 @@ p {
     text-decoration: none;
 }
 
+/* 
 .w-85 {
     width: 85% !important;
-}
+} */
 
 .bottomSpacer {
     width: 100%;
     height: 20px;
 }
 
-.center{
+.center {
     width: 100%;
     margin-left: 44%;
     margin-right: auto;
     justify-self: center;
+}
+
+.mauto {
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .mauto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .w-85 {
+        width: 85% !important;
+    }
+
+    .cfluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    p{
+        font-size: 1.2rem;
+    }
 }
